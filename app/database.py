@@ -64,13 +64,13 @@ class MemoryDataBase(DataBase):
 
         return keys
 
-    def begin(self):
+    def begin(self) -> None:
         self.transactions.append(self.memory.copy())
 
-    def rollback(self):
+    def rollback(self) -> None:
         if self.transactions:
             self.memory = self.transactions.pop()
 
-    def commit(self):
+    def commit(self) -> None:
         if self.transactions:
             self.transactions = []
