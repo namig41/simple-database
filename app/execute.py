@@ -23,10 +23,8 @@ def execute_command(
             return_value = data_base.counts(command.value)
         case CommandType.FIND:
             return_value = data_base.find(command.value)
-
         case CommandType.BEGIN:
             data_base.begin()
-
         case CommandType.ROLLBACK:
             data_base.rollback()
         case CommandType.COMMIT:
