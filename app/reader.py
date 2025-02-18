@@ -3,7 +3,6 @@ from typing import Protocol
 
 
 class Reader(Protocol):
-
     @abstractmethod
     def read(self) -> str: ...
 

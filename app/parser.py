@@ -10,7 +10,6 @@ class Parser(Protocol):
 
 
 class SimpleParser(Parser):
-
     def parse(self, line: str) -> Command:
         args: list[str] = line.split()
 

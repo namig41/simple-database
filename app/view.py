@@ -5,7 +5,6 @@ from app.command import CommandType
 
 
 class CommandView(Protocol):
-
     @abstractmethod
     def to_string(self, type: CommandType, value: Any) -> str: ...
 

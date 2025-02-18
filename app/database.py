@@ -4,7 +4,6 @@ from typing import Iterable
 
 
 class DataBase(ABC):
-
     @abstractmethod
     def set(self, key: str, value: int) -> None: ...
 
